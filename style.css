@@ -22,3 +22,25 @@ body {
     text-align: center;
     vertical-align: text-bottom;
 }
+
+#message {
+    position: absolute; /* Ensures it's positioned relative to the page */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the element */
+    z-index: 1000; /* Places the div on top of other content */
+    background-color: white; /* Optional: add a semi-transparent background */
+    padding: 4px; /* Optional: adjust padding as needed */
+    color: red;
+    font-weight: bold;
+    font-size: 64px;
+}
+
+.hidden {
+    display: none;
+}
+
+.score {
+    display: flex;
+    justify-content: space-between;
+}
